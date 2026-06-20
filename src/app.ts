@@ -15,7 +15,7 @@ export function createApp() {
   const app = express();
 
   // CORS configuration
-  const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000';
+  const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000' || 'https://ajaia-frontend.vercel.app';
   app.use(cors({
     origin: allowedOrigin,
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
