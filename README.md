@@ -79,9 +79,8 @@ Only `.txt` and `.md` formats (maximum 2MB size limit) are accepted.
 - Real-time online presence indicators using Supabase realtime channels.
 - Expand markdown import styling to parse inline code blocks and quotes.
 
-> **Note:** The backend is hosted on Render's free tier and may take 
-> 30–60 seconds to respond on first load after inactivity. 
-> This is a hosting constraint, not an application bug.
+> **Note:** The backend is deployed on Vercel as a Serverless Function, 
+> ensuring instant response times without cold-start sleep cycles.
 
 ## AI Usage Note
 This application was built utilizing Claude 3.5 Sonnet to draft the database model structure and helper text conversion. The generated code was manually validated and debugged to adhere to standard TypeScript typing and secure Express routes.
