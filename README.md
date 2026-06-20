@@ -6,8 +6,8 @@ DocFlow is a lightweight, responsive document editor demonstrating full-stack co
 
 | Service | URL |
 |---|---|
-| Frontend | https://[your-vercel-url] |
-| Backend API | https://[your-render-url]/api/v1 |
+| Frontend | https://ajaia-frontend.vercel.app |
+| Backend API | https://ajaia-backend.vercel.app/api/v1 |
 
 ## Test Credentials
 
