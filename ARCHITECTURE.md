@@ -9,10 +9,10 @@ DocFlow is a full-stack document editor built with Next.js, Express, and Supabas
 ```mermaid
 graph TD
     Client[Next.js Client] -->|X-User-Email Header| API[Express API Gateway]
-    API -->|resolveUser Middleware| Auth[Auth Layer]
-    Auth -->|Valid User| Route[Route Controller]
-    Route -->|validate Zod Schema| Services[Service Layer]
-    Services -->|Bypasses RLS| DB[(Supabase PostgreSQL)]
+    API -->|resolveUser Middleware| Auth[resolveUser Middleware]
+    Auth -->|Valid User| Route[Route Handler]
+    Route -->|validate Zod Schema| Services[Service]
+    Services -->|Bypasses RLS| DB[(Supabase)]
 ```
 
 Requests are authenticated by resolving the `X-User-Email` header in middleware, which links to a seeded database user. This keeps local testing friction-free while maintaining a strict user context through the Express controller and service layers down to Supabase.

@@ -21,9 +21,9 @@ No password is required. Switch active users via the top-right header switcher.
 
 ## To Test Sharing
 
-1. Log in as **Alice**, create a document, click **Share**, and grant access to **Bob**.
-2. Switch active user to **Bob** in the header.
-3. Observe the shared document under **Shared With Me** in read-only mode (editor toolbar hidden).
+1. As **Alice** — create a document, click **Share**, grant **Bob** access as **Viewer** and **Charlie** as **Editor**
+2. Switch to **Bob** — document appears under "Shared With Me", editor is locked, toolbar hidden, "Read Only" badge visible
+3. Switch to **Charlie** — document appears under "Shared With Me", full editing access, Share button hidden
 
 ## Local Setup
 
@@ -70,7 +70,7 @@ Only `.txt` and `.md` formats (maximum 2MB size limit) are accepted.
 ## Intentional Scope Cuts
 - **Real-time collaboration**: Avoids complex CRDT synchronization structures to fit the development schedule.
 - **Authentication**: Uses simulated header-based session switching to keep reviewer testing frictionless.
-- **Granular roles**: Viewer and Owner cover the required access controls without layout overhead.
+- **Role permissions beyond Viewer/Editor**: Owner, Editor, and Viewer roles are implemented. Commenter role and granular field-level permissions were excluded to keep the sharing model clean.
 - **PDF Export**: Markdown download is built instead, eliminating heavy server-side puppeteer dependencies.
 - **Comments and suggestions**: Omitted to keep database models and interface components light.
 

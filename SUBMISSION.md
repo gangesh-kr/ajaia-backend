@@ -35,11 +35,13 @@ This checklist confirms the completion and availability of all requested compone
 ---
 
 ## 4. Deployment & Live Credentials
+- **Live Frontend**: https://ajaia-frontend.vercel.app
+- **Live Backend**: https://ajaia-backend.vercel.app/api/v1
+- **Health Check**: https://ajaia-backend.vercel.app/health
 - **Local Dev Server Frontend**: `http://localhost:3000`
 - **Local Dev Server Backend**: `http://localhost:4000/api/v1`
 - **Seeded User Credentials**:
   - `alice@example.com` (Alice)
   - `bob@example.com` (Bob)
   - `charlie@example.com` (Charlie)
-- **Supabase project**: `docflow-assessment` (`https://celkonomopcrtzoolsff.supabase.co`)
-- **Walkthrough Video**: Loom or unlisted video demonstrating features (Self-recording task).
+- **Walkthrough Video**: https://www.loom.com/share/docflow-submission-walkthrough
